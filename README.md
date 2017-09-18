@@ -1,6 +1,6 @@
 # Ng4PeliculasWithTesting
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+Proyecto que obtiene las películas de ToMDb para demostrar las pruebas unitarias y pruebas e2e
 
 ## Development server
 

@@ -1,4 +1,10 @@
 
+Título:<input type="text" #pelicula><br>
+Descripción:<input type="text" #descripcion>
+<button (click)="crearPelicula(pelicula, descripcion)" name="btnCrearPelicula">Crear pelicula</button>
+<label *ngIf="created" name="lblMessage">Última película creada {{pelicula.value}}</label>
+<hr>
+
 <ul>
   <li *ngFor="let pelicula of peliculas">
     <h4>{{pelicula.title}}</h4>

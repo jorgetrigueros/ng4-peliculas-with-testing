@@ -14,7 +14,7 @@ import { MockBackend } from '@angular/http/testing';
 import { PeliculasService } from './peliculas.service';
 import { MockConnection } from '@angular/http/testing';
 
-fdescribe('PeliculasService', () => {
+describe('PeliculasService', () => {
   // Arrange
   beforeEach(() => {
     TestBed.configureTestingModule({

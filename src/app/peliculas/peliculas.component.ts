@@ -9,6 +9,8 @@ import { Pelicula } from './pelicula';
 })
 export class PeliculasComponent implements OnInit {
   peliculas: Pelicula[];
+  pelicula: Pelicula;
+  created: boolean = false;
 
   constructor(private peliculasService: PeliculasService) { }
 
@@ -22,6 +24,13 @@ export class PeliculasComponent implements OnInit {
       data => this.peliculas = data,
       error => console.log(error)
       );
+  }
+
+  crearPelicula(title, descripcion) {
+    console.log(title.value);
+    const titulo = title.value;
+    const pelicula: Pelicula = new Pelicula(45, titulo, titulo, descripcion.value, '');
+    this.created = true;
   }
 
 }

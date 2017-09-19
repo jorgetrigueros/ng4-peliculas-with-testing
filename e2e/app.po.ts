@@ -6,6 +6,6 @@ export class Ng4PeliculasWithTestingPage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    return element(by.css('app-header a[name="inicio"]')).getText();
   }
 }

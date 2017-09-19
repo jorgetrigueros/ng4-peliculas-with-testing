@@ -1,6 +1,7 @@
 
-Título:<input type="text" #pelicula><br>
-Descripción:<input type="text" #descripcion>
+Título:<input type="text" #pelicula name="titulo">&nbsp;
+<input type="checkbox" #mismotitulo id="chkTituloOriginal"> Título original<br>
+Descripción:<input type="text" #descripcion name="descripcion">
 <button (click)="crearPelicula(pelicula, descripcion)" name="btnCrearPelicula">Crear pelicula</button>
 <label *ngIf="created" name="lblMessage">Última película creada {{pelicula.value}}</label>
 <hr>
